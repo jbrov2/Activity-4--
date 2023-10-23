@@ -4,7 +4,7 @@ const app = express()
 
 
 //adding controller
-app.use('.places', require('./controllers/places'))
+app.use('/places', require('./controllers/places'))
 
 app.get('/',(req,res) => {
     res.send('Hello World')
@@ -13,7 +13,7 @@ app.get('/',(req,res) => {
 
 //Wild card page make always ensure it ends up on the bottom.
 app.get('*',(req,res) =>{
-    res.status.send('<h1>404 Page</h1>')
+    res.status(404).send('<h1>404 Page</h1>')
 })
 
 app.listen(process.env.PORT)
