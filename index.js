@@ -3,6 +3,9 @@ const express = require('express')
 const app = express()
 
 
+//adding controller
+app.use('.places', require('./controllers/places'))
+
 app.get('/',(req,res) => {
     res.send('Hello World')
 })
