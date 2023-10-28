@@ -7,13 +7,13 @@ router.get('/', (req,res) =>{
         city: 'Seattle',
         state: 'WA',
         cuisines: 'Thai, Pan-Asian',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/gurpartap-sandhu-nuAOmcjs3ZQ-unsplash.jpg'
       }, {
         name: 'Kansas Fried Donuts',
         city: 'Phoenix',
         state: 'AZ',
         cuisines: 'Donuts, Chicken',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/goku.png'
       }]
       
     res.render('places/index', {places})
